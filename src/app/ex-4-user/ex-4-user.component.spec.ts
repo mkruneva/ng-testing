@@ -1,25 +1,16 @@
-// import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { UsersComponent } from './ex-4-user.component';
+import { UserService } from './ex-4-user.service';
 
-// import { Ex4UserComponent } from './ex-4-user.component';
+describe('UserComponent', () => {
+  let component: UsersComponent;
+  let service: UserService;
 
-// describe('Ex4UserComponent', () => {
-//   let component: Ex4UserComponent;
-//   let fixture: ComponentFixture<Ex4UserComponent>;
+  beforeEach(() => {
+      service = new UserService(null);
+      component = new UsersComponent(service);
+  });
 
-//   beforeEach(async(() => {
-//     TestBed.configureTestingModule({
-//       declarations: [ Ex4UserComponent ]
-//     })
-//     .compileComponents();
-//   }));
-
-//   beforeEach(() => {
-//     fixture = TestBed.createComponent(Ex4UserComponent);
-//     component = fixture.componentInstance;
-//     fixture.detectChanges();
-//   });
-
-//   it('should create', () => {
-//     expect(component).toBeTruthy();
-//   });
-// });
+  it('should create UserComponent', () => {
+    expect(component).toBeTruthy();
+  });
+});
