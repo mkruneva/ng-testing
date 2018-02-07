@@ -1,7 +1,7 @@
 
 import { TextSummaryPipe } from './ex-1-text-summary-pipe.component';
 
-fdescribe('TextSummaryPipe Component', () => {
+describe('TextSummaryPipe Component', () => {
   let component: TextSummaryPipe;
 
   beforeEach(() => {
