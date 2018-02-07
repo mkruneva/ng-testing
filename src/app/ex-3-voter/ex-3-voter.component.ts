@@ -2,7 +2,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-    selector: 'voter',
+    selector: 'app-voter',
     template: `
     <div class="voter">
         <i 
@@ -55,8 +55,8 @@ export class VoterComponent {
         this.myVoteChanged.emit({ myVote: this.myVote });
     }
 
-    downVote(){
-        if (this.myVote == -1) {
+    downVote() {
+        if (this.myVote === -1) {
             return;
         }
         this.myVote--;
